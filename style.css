@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background-color: rgb(141, 171, 227);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.ptop {
+    padding: 0 30%;
+    background-color: cornflowerblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    color: cornflowerblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pbtm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-inline-start: 15px;
+    padding-block: 40px;
+    height: calc(100% - 100px);
+}
+
+.bubble {
+    height: 50px;
+    width: 50px;
+    background-color: cornflowerblue;
+    display: grid;
+    place-content: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bubble:is(:hover, :focus, :focus-visible, :focus-within) {
+    background-color: rgb(73, 124, 218);
+}
+
+
+
+@media (max-width: 990px) {
+
+    .ptop {
+        padding: 0;
+    }
+
+    .elem:nth-child(1) { margin-left: 20px; }
+    .elem:nth-child(3) { margin-right: 20px; }
+
+    .panel {
+        overflow: hidden;
+    }
+
+    .pbtm {  
+        overflow: hidden;
+        height: 83%;
+    }
+
+}
+
+
+
+@media (max-width: 786px) {
+
+    .ptop {
+        padding: 0;
+    }
+
+    .elem:nth-child(1) { margin-left: 20px; }
+    .elem:nth-child(3) { margin-right: 20px; }
+
+    .panel {
+        overflow: hidden;
+        /* padding: 0; */
+    }
+
+    .pbtm {  
+        overflow: hidden;
+        height: 83%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .ptop {
+        padding: 0;
+    }
+
+    .elem:nth-child(1) { margin-left: 20px; }
+    .elem:nth-child(3) { margin-right: 20px; }
+
+    .panel {
+        overflow: hidden;
+        /* padding: 0; */
+    }
+
+    .pbtm {  
+        overflow: hidden;
+        height: 83%;
+    }
+
+}
